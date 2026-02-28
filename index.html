@@ -22,7 +22,7 @@ button{background:#00ff88;font-weight:bold;cursor:pointer}
 <div id="page1">
 <h2>Select Mode</h2>
 <select id="mode">
-<option value="solo">Solo - ₹1</option>
+<option value="solo">Solo - ₹10</option>
 <option value="duo">Duo - ₹20</option>
 <option value="squad">Squad - ₹40</option>
 </select>
@@ -75,12 +75,12 @@ const playersDiv=document.getElementById("players");
 const messageDiv=document.getElementById("message");
 
 function getAmount(){
-return modeSelect.value==="solo"?1:
+return modeSelect.value==="solo"?10:
 modeSelect.value==="duo"?20:40;
 }
 
 function renderPlayers(){
-let count=modeSelect.value==="solo"?1:
+let count=modeSelect.value==="solo"?10:
 modeSelect.value==="duo"?2:4;
 playersDiv.innerHTML="";
 for(let i=1;i<=count;i++){
